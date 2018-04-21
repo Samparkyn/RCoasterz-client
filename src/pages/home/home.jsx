@@ -1,10 +1,11 @@
 import React from 'react'
+import './home.css'
 
 export const Home = () => {
   return (
-    <div>
-      <h1>Welcome!</h1>
-      <p>Discover and explore Parks and Coasters here.. </p>
+    <div className="home">
+      <div className="home__background" />
+      <p>Explore and record your favourite parks and coasters </p>
     </div>
   )
 }

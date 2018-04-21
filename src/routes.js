@@ -7,16 +7,13 @@ import { Header } from './components/header'
 import { Footer } from './components/footer'
 
 export const Routes = () => (
-  <div>
-    <div>
-      <Header />
-      <main>
+  <div className="app">
+    <Header />
+      <main className="app__body">
         <Route exact path="/" component={Home} />
         <Route exact path="/parks" component={Parks} />
         <Route exact path="/coasters" component={Coasters} />
       </main>
-
-    </div>
     <Footer />
    </div>
 )
