@@ -1,0 +1,15 @@
+.footer {
+  height: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__contents {
+  width: 122px;
+  color: #FFF;	
+  font-size: 14px;
+  text-align: center;
+}
