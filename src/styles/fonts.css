@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Vision-Regular';
+  src: url('../assets/fonts/Vision.woff2') format('woff2'),
+       url('../assets/fonts/Vision.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Vision-Light';
+  src: url('../assets/fonts/Vision-Light.woff2') format('woff2'),
+       url('../assets/fonts/Vision-Light.woff') format('woff')
+}

@@ -1,0 +1,32 @@
+.header {
+  height: 60px;
+  background-color: blueviolet;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.header__wrapper {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+}
+
+.header__container-left,
+.header__container-right {
+  display: flex;
+  align-items: center;
+}
+
+.header__container-right {
+  margin-left: auto;
+}
+
+.header__link {
+  width: 122px;
+  color: #FFF;	
+  font-size: 18px;	
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-align: center;
+}
