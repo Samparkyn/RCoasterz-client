@@ -1,16 +1,13 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import { Home } from './pages/home'
 import { Parks } from './pages/parks'
 import { Coasters } from './pages/coasters'
+import { Header } from './components/header'
 
 export const Routes = () => (
   <div>
-    <header>
-      <Link to="/">Home</Link>
-      <Link to="/parks">Parks</Link>
-      <Link to="/coasters">Coasters</Link>
-    </header>
+    <Header />
 
     <main>
       <Route exact path="/" component={Home} />
