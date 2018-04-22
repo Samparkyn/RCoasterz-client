@@ -19,7 +19,7 @@
 .intro-text {
   color: #FFF;	
   font-family: 'Vision-Light';
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   letter-spacing: 1.5px;
@@ -47,4 +47,10 @@
 
 .btn:hover {
   background: linear-gradient(49.79deg, #3494E6 0%, #EC6EAD 100%);
+}
+
+.btn__link {
+  color: #FFF;	
+  text-decoration: none;
+  text-align: center;
 }

@@ -5,6 +5,7 @@ import { Parks } from './pages/parks'
 import { Coasters } from './pages/coasters'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
+import { Explore } from './pages/explore'
 
 export const Routes = () => (
   <div className="app">
@@ -14,6 +15,7 @@ export const Routes = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/parks" component={Parks} />
         <Route exact path="/coasters" component={Coasters} />
+        <Route exact path="/explore" component={Explore} />
       </main>
     <Footer />
    </div>
