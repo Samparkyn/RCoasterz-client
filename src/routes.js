@@ -8,6 +8,7 @@ import { Footer } from './components/footer'
 
 export const Routes = () => (
   <div className="app">
+    <div className="app__gradient" />
     <Header />
       <main className="app__body">
         <Route exact path="/" component={Home} />

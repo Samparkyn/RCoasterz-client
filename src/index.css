@@ -11,6 +11,17 @@ body {
   right: 0;
 }
 
+.app__gradient {
+  background: linear-gradient(49.79deg, #3494E6 0%, #EC6EAD 100%);
+  z-index: -2;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 #root,
 .app {
   height: 100%;

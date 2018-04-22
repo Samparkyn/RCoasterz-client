@@ -14,7 +14,7 @@ export class Header extends Component {
       <div className="header">
         <div className="header__wrapper">
           <div className="header__container-left">
-            <Link className="header__link" to="/">Home</Link>
+            <Link className="header__link" to="/">RCoasterz</Link>
           </div>
           <div className="header__container-right">
             <Link className="header__link" to="/parks">Parks</Link>
