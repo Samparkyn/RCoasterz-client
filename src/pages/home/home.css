@@ -5,7 +5,7 @@
 
 .home__background {
   position: fixed;
-  top: 0;
+  top: 60px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -14,4 +14,37 @@
   background-size: cover;
   z-index: -2;
   opacity: 0.5;
+}
+
+.intro-text {
+  color: #FFF;	
+  font-family: 'Vision-Light';
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  margin-top: 100px;
+}
+
+.btn__container {
+  justify-content: center;
+  display: flex;
+}
+
+.btn {
+  height: 50px;
+  width: 180px;	
+  background: linear-gradient(112.3deg, #39F 0%, #65C7F7 64%, #73C4F1 100%);	
+  box-shadow: 0 3px 12px 0 rgba(0,0,0,0.5);
+  color: #FFF;
+  font-family: 'Vision-Light';		
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background: linear-gradient(49.79deg, #3494E6 0%, #EC6EAD 100%);
 }
