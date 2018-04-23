@@ -1,28 +1,33 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-export class ExploreToggle extends Component {
-  state = {
-    mapView: true,
-    listView: false
+export function ExploreToggle (props) {
+
+  const { active } = props
+
+  let mapClassName = 'btn'
+  let listClassName = 'btn'
+
+  if (active === 'map') {
+    mapClassName += ' selected'
   }
 
-  toggleView = () => {
-    this.setState({mapView: !this.state.mapView, listView: !this.state.listView})
-    console.log(this.state);
+  if (active === 'list') {
+    listClassName += ' selected'
   }
 
-  render() {
-    const { mapView, listView } = this.state
-
-    return (
-      <div className="explore__toggle">
-        <div className="explore__toggle__map" onClick={this.toggleView}>
-          <p>Map</p>
-        </div>
-        <div className="explore__toggle__list" onClick={this.toggleView}>
-          <p>List</p>
-        </div>
+  return (
+    <div className="explore__toggle">
+      <div className="explore__toggle__map">
+        <Link className="map__btn__link" to="/explore?mode=map">
+          <button className={mapClassName}>Map</button>
+        </Link>
       </div>
-    )
-  }
+      <div className="explore__toggle__list">
+        <Link className="list__btn__link" to="/explore?mode=list">
+          <button className={listClassName}>List</button>
+        </Link>
+      </div>
+    </div>
+  )
 }

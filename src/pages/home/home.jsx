@@ -7,7 +7,7 @@ export const Home = () => {
       <div className="home__background" />
       <p className="intro-text">Explore and record your favourite parks and coasters </p>
       <div className="btn__container">
-        <Link className="btn__link" to="/explore">
+        <Link className="btn__link" to="/explore?mode=map">
           <button className="btn">Launch me!</button>
         </Link>
       </div>

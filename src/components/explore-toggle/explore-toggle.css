@@ -16,3 +16,7 @@
 .explore__toggle__list{
   background: white;
 }
+
+.selected {
+  background: red;
+}
