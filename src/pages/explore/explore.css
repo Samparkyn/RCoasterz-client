@@ -1,4 +1,10 @@
-.explore {
+.explore__tools {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+.explore__map {
   height: 100%;
   width: 100%;
 }

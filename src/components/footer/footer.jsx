@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import './footer.css'
-
 export const Footer = () => {
 
     return (
