@@ -1,3 +1,10 @@
 .search__container {
   display: flex;
 }
+
+.search__bar {
+  height: 30px;
+  width: 250px;
+  margin-left: 10px;
+  margin-top: 3px;
+}

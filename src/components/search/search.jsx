@@ -11,9 +11,7 @@ export class Search extends Component {
 
     return (
       <div className="search__container">
-        <div className="search">
-          <input></input>
-        </div>
+          <input className="search__bar" />
       </div>
     )
   }

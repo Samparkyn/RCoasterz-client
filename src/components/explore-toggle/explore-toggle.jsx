@@ -5,8 +5,8 @@ export function ExploreToggle (props) {
 
   const { active } = props
 
-  let mapClassName = 'btn'
-  let listClassName = 'btn'
+  let mapClassName = 'map__button'
+  let listClassName = 'list__button'
 
   if (active === 'map') {
     mapClassName += ' selected'
@@ -20,12 +20,12 @@ export function ExploreToggle (props) {
     <div className="explore__toggle">
       <div className="explore__toggle__map">
         <Link className="map__btn__link" to="/explore?mode=map">
-          <button className={mapClassName}>Map</button>
+          <button className={mapClassName} />
         </Link>
       </div>
       <div className="explore__toggle__list">
         <Link className="list__btn__link" to="/explore?mode=list">
-          <button className={listClassName}>List</button>
+          <button className={listClassName} />
         </Link>
       </div>
     </div>

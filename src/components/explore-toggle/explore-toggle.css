@@ -1,22 +1,35 @@
 .explore__toggle {
   display: flex;
+  margin-left: 150px;
 }
 
 .explore__toggle__map,
 .explore__toggle__list {
-  width: 50px;
+  width: 40px;
   text-align: center;
   border-radius: 2px;
 }
 
-.explore__toggle__map{
+.selected {
   background: skyblue;
 }
 
-.explore__toggle__list{
-  background: white;
+.map__button,
+.list__button {
+  height: 40px;
+  width: 40px;	
+  box-shadow: 0 3px 12px 0 rgba(0,0,0,0.5);		
+  border-radius: 5px;
+  border: none;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.selected {
-  background: red;
+.map__button {
+  background-image: url('../../assets/images/globe.jpg');
+}
+
+.list__button {
+  background-image: url('../../assets/images/list-icon.jpg');
 }
