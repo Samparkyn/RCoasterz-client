@@ -1,0 +1,19 @@
+[{
+    "name": "Europa Park",
+    "id": 1,
+    "country": "Germany",
+    "operating_since": "date",
+    "coasters": ["Blue Fire", "SilverStar", "Matterhorn Blitz", "Schweizer Bobban", "EuroMir", "EuroSat"]
+   }, {
+    "name": "Busch Gardens",
+    "id": 2,
+    "country": "United States",
+    "operating_since": "date",
+    "coasters": ["Kumba", "Sheikra", "Montu", "Cobra's Curse", "Cheetah Hunt"]
+ }, {
+    "name": "Islands of Adventure",
+    "id": 3,
+    "country": "United States",
+    "operating_since": "date",
+    "coasters": ["Incredible Hulk"]
+}]
