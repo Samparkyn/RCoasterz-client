@@ -1,4 +1,13 @@
 import React, { Component } from 'react'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {
+  Table,
+  TableBody,
+  TableHeader,
+  TableHeaderColumn,
+  TableRow,
+  TableRowColumn,
+} from 'material-ui/Table';
 
 export class CoastersList extends Component {
 
@@ -34,22 +43,37 @@ export class CoastersList extends Component {
     }
 
     console.log('coaster data ', data)
-    const coasterNames = data.map(dataPoint => {
-      return <p>{dataPoint.name}</p>
+    const coasterInfo = data.map(dataPoint => {
+      return <TableRow>
+          <TableRowColumn>{dataPoint.name}</TableRowColumn>
+          <TableRowColumn>{dataPoint.park.name}</TableRowColumn>
+          <TableRowColumn>{dataPoint.park.country}</TableRowColumn>
+          <TableRowColumn>{dataPoint.stats.inversions}</TableRowColumn>
+      </TableRow>
     })
-    console.log('coasternames', coasterNames)
+    console.log('coasternames', coasterInfo)
 
     return (
       <div>
         <h1>Coasters</h1>
-        <p>What coaster do you want to know more about?</p>
+        <p>What Coaster do you want to know more about?</p>
         <div>
-          <p>Coasters</p>
-          {coasterNames}
+          <MuiThemeProvider>
+            <Table>
+              <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
+                <TableRow>
+                  <TableHeaderColumn>Name</TableHeaderColumn>
+                  <TableHeaderColumn>Park</TableHeaderColumn>
+                  <TableHeaderColumn>Country</TableHeaderColumn>
+                  <TableHeaderColumn>Inversions</TableHeaderColumn>
+                </TableRow>
+              </TableHeader>
+              <TableBody displayRowCheckbox={false}>
+                {coasterInfo}
+              </TableBody>
+            </Table>
+          </MuiThemeProvider>
         </div>
-        <p></p>
-        <p></p>
-        <p></p>
       </div>
     )
   }

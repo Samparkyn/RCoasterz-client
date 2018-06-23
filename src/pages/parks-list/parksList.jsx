@@ -72,9 +72,6 @@ export class ParksList extends Component {
             </Table>
           </MuiThemeProvider>
         </div>
-        <p></p>
-        <p></p>
-        <p></p>
       </div>
     )
   }

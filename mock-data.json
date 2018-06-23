@@ -9,13 +9,13 @@
       "coasters": ["Blue Fire", "SilverStar", "Matterhorn Blitz", "Schweizer Bobban", "EuroMir", "EuroSat"]
    },
   "stats": {
-    "Length":	1056,
-    "Height":	38,
-    "Speed":	100,
-    "Inversions":	4,
-    "Duration":	"2m30",
-    "G-Force": 3.8,
-    "Elements": ["LSM Launch from 0 km/h - 100 km/h in 2.5s", "32 m tall Loop",
+    "length":	1056,
+    "height":	38,
+    "speed":	100,
+    "inversions":	4,
+    "duration":	"2m30",
+    "g-Force": 3.8,
+    "elements": ["LSM Launch from 0 km/h - 100 km/h in 2.5s", "32 m tall Loop",
       "Block Brake", "Twisted Horseshoe Roll", "In-Line Twist"]
   }
 }, {
@@ -29,14 +29,14 @@
     "coasters": ["Blue Fire", "SilverStar", "Matterhorn Blitz", "Schweizer Bobban", "EuroMir", "EuroSat"]
  },
   "stats": {
-    "Length":	1620,
-    "Height":	73,
+    "length":	1620,
+    "height":	73,
     "drop": 67,
-    "Speed":	127,
-    "Inversions":	0,
-    "Duration":	"4m00",
-    "G-Force": 4,
-    "Elements": ["73 m tall Chain Lift Hill with a 67 m drop", "Hill with a 49 m drop",
+    "speed":	127,
+    "inversions":	0,
+    "duration":	"4m00",
+    "g-Force": 4,
+    "elements": ["73 m tall Chain Lift Hill with a 67 m drop", "Hill with a 49 m drop",
       "Hill with a 41 m drop", "Over-Banked Curve"]
   }
 }, {
@@ -50,14 +50,14 @@
     "coasters": ["Incrdible Hulk"]
  },
   "stats": {
-    "Length":	1620,
-    "Height":	73,
+    "length":	1620,
+    "height":	73,
     "drop": 67,
-    "Speed":	127,
-    "Inversions":	0,
-    "Duration":	"4m00",
-    "G-Force": 4,
-    "Elements": ["45.7 m long Tunnel",
+    "speed":	127,
+    "inversions":	6,
+    "duration":	"4m00",
+    "g-Force": 4,
+    "elements": ["45.7 m long Tunnel",
       "Tire Propelled Launch from 0 km/h - 64.4 km/h in 2s",
       "Zero-G Roll",
       "Cobra Roll",
