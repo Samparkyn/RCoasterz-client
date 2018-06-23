@@ -1,4 +1,13 @@
 import React, { Component } from 'react'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {
+  Table,
+  TableBody,
+  TableHeader,
+  TableHeaderColumn,
+  TableRow,
+  TableRowColumn,
+} from 'material-ui/Table';
 
 export class ParksList extends Component {
 
@@ -34,17 +43,34 @@ export class ParksList extends Component {
     }
 
     console.log('data', data)
-    const parkNames = data.map(dataPoint => {
-      return <p>{dataPoint.park.name}</p>
+    const parkInfo = data.map(dataPoint => {
+      return <TableRow>
+          <TableRowColumn>{dataPoint.park.name}</TableRowColumn>
+          <TableRowColumn>{dataPoint.park.country}</TableRowColumn>
+          <TableRowColumn>{dataPoint.park.coasters.length}</TableRowColumn>
+      </TableRow>
     })
-    console.log('parknames', parkNames)
+    console.log('parknames', parkInfo)
 
     return (
       <div>
         <h1>Parks</h1>
         <p>What park do you want to know more about?</p>
         <div>
-          {parkNames}
+          <MuiThemeProvider>
+            <Table>
+              <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
+                <TableRow>
+                  <TableHeaderColumn>Name</TableHeaderColumn>
+                  <TableHeaderColumn>Location</TableHeaderColumn>
+                  <TableHeaderColumn>No of Coasters</TableHeaderColumn>
+                </TableRow>
+              </TableHeader>
+              <TableBody displayRowCheckbox={false}>
+                {parkInfo}
+              </TableBody>
+            </Table>
+          </MuiThemeProvider>
         </div>
         <p></p>
         <p></p>
