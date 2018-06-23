@@ -1,0 +1,36 @@
+[{
+  "name": "Blue Fire",
+  "location": {
+    "country": "Germany",
+    "park": "Europa Park",
+    "operating_since": "date"
+  },
+  "stats": {
+    "Length":	1056,
+    "Height":	38,
+    "Speed":	100,
+    "Inversions":	4,
+    "Duration":	"2m30",
+    "G-Force": 3.8,
+    "Elements": ["LSM Launch from 0 km/h - 100 km/h in 2.5s", "32 m tall Loop",
+      "Block Brake", "Twisted Horseshoe Roll", "In-Line Twist"]
+  }
+}, {
+  "name": "Silver Star",
+  "location": {
+    "country": "Germany",
+    "park": "Europa Park",
+    "operating_since": "date"
+  },
+  "stats": {
+    "Length":	1620,
+    "Height":	73,
+    "drop": 67,
+    "Speed":	127,
+    "Inversions":	0,
+    "Duration":	"4m00",
+    "G-Force": 4,
+    "Elements": ["73 m tall Chain Lift Hill with a 67 m drop", "Hill with a 49 m drop",
+      "Hill with a 41 m drop", "Over-Banked Curve"]
+  }
+}]
