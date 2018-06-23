@@ -1,10 +1,12 @@
 [{
   "name": "Blue Fire",
-  "location": {
-    "country": "Germany",
-    "park": "Europa Park",
-    "operating_since": "date"
-  },
+    "park": {
+      "name": "Europa Park",
+      "id": 1,
+      "country": "Germany",
+      "operating_since": "date",
+      "coasters": ["Blue Fire", "SilverStar", "Matterhorn Blitz", "Schweizer Bobban", "EuroMir", "EuroSat"]
+   },
   "stats": {
     "Length":	1056,
     "Height":	38,
@@ -17,11 +19,13 @@
   }
 }, {
   "name": "Silver Star",
-  "location": {
+  "park": {
+    "name": "Europa Park",
+    "id": 1,
     "country": "Germany",
-    "park": "Europa Park",
-    "operating_since": "date"
-  },
+    "operating_since": "date",
+    "coasters": ["Blue Fire", "SilverStar", "Matterhorn Blitz", "Schweizer Bobban", "EuroMir", "EuroSat"]
+ },
   "stats": {
     "Length":	1620,
     "Height":	73,

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
 import { Home } from './pages/home'
-import { Parks } from './pages/parks'
-import { Coasters } from './pages/coasters'
+import { ParksList } from './pages/parks-list'
+import { CoastersList } from './pages/coasters-list'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 import { Explore } from './pages/explore'
@@ -13,8 +13,8 @@ export const Routes = () => (
     <Header />
       <main className="app__body">
         <Route exact path="/" component={Home} />
-        <Route exact path="/parks" component={Parks} />
-        <Route exact path="/coasters" component={Coasters} />
+        <Route exact path="/parks" component={ParksList} />
+        <Route exact path="/coasters" component={CoastersList} />
         <Route exact path="/explore" component={Explore} />
       </main>
     <Footer />
