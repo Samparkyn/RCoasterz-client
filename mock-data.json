@@ -1,5 +1,6 @@
 [{
   "name": "Blue Fire",
+  "id": 1,
     "park": {
       "name": "Europa Park",
       "id": 1,
@@ -19,6 +20,7 @@
   }
 }, {
   "name": "Silver Star",
+  "id": 2,
   "park": {
     "name": "Europa Park",
     "id": 1,
@@ -36,5 +38,32 @@
     "G-Force": 4,
     "Elements": ["73 m tall Chain Lift Hill with a 67 m drop", "Hill with a 49 m drop",
       "Hill with a 41 m drop", "Over-Banked Curve"]
+  }
+}, {
+  "name": "Hulk",
+  "id": 3,
+  "park": {
+    "name": "Islands of Adventure",
+    "id": 2,
+    "country": "United States",
+    "operating_since": "date",
+    "coasters": ["Incrdible Hulk"]
+ },
+  "stats": {
+    "Length":	1620,
+    "Height":	73,
+    "drop": 67,
+    "Speed":	127,
+    "Inversions":	0,
+    "Duration":	"4m00",
+    "G-Force": 4,
+    "Elements": ["45.7 m long Tunnel",
+      "Tire Propelled Launch from 0 km/h - 64.4 km/h in 2s",
+      "Zero-G Roll",
+      "Cobra Roll",
+      "Loop",
+      "Corkscrew",
+      "Loop",
+      "Corkscrew"]
   }
 }]
