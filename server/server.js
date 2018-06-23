@@ -8,14 +8,22 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
 
-const data = require('../mock-data.json')
-const parsedData = JSON.stringify(data)
+const coasterData = require('../coaster-mock-data.json')
+const parsedCoasterData = JSON.stringify(coasterData)
+const parkData = require('../park-mock-data.json')
+const parsedParkData = JSON.stringify(parkData)
+
 
 app.listen(port, () => {
   console.log("Ready on port:", port);
 });
 
-app.get('/data', function (req, res) {
+app.get('/coaster-data', function (req, res) {
   res.header("Content-Type",'application/json');
-  res.send(parsedData);
+  res.send(parsedCoasterData);
+})
+
+app.get('/park-data', function (req, res) {
+  res.header("Content-Type",'application/json');
+  res.send(parsedParkData);
 })

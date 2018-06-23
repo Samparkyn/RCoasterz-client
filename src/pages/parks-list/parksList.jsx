@@ -20,7 +20,7 @@ export class ParksList extends Component {
   }
 
   fetchData() {
-    fetch('http://localhost:8000/data')
+    fetch('http://localhost:8000/park-data')
       .then((response) => response.json())
       .then((data) => {
         this.setState({ data })
@@ -45,9 +45,9 @@ export class ParksList extends Component {
     console.log('data', data)
     const parkInfo = data.map(dataPoint => {
       return <TableRow>
-          <TableRowColumn>{dataPoint.park.name}</TableRowColumn>
-          <TableRowColumn>{dataPoint.park.country}</TableRowColumn>
-          <TableRowColumn>{dataPoint.park.coasters.length}</TableRowColumn>
+          <TableRowColumn>{dataPoint.name}</TableRowColumn>
+          <TableRowColumn>{dataPoint.country}</TableRowColumn>
+          <TableRowColumn>{dataPoint.coasters.length}</TableRowColumn>
       </TableRow>
     })
     console.log('parknames', parkInfo)

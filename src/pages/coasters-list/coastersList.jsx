@@ -20,7 +20,7 @@ export class CoastersList extends Component {
   }
 
   fetchData() {
-    fetch('http://localhost:8000/data')
+    fetch('http://localhost:8000/coaster-data')
       .then((response) => response.json())
       .then((data) => {
         this.setState({ data })
