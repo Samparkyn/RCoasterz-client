@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Table } from '../../components/table'
 
 export class ParksList extends Component {
 
@@ -42,23 +43,18 @@ export class ParksList extends Component {
       </tr>
     })
     console.log('parknames', parkInfo)
+    
+    const headers = <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>No. of Coasters</th>
+    </tr>
 
     return (
       <div>
         <h1>Parks</h1>
         <p>What park do you want to know more about?</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Location</th>
-              <th>No of Coasters</th>
-            </tr>
-          </thead>
-          <tbody>
-            {parkInfo}
-          </tbody>
-        </table>
+       <Table header={headers} rows={parkInfo} />
         </div>
     )
   }

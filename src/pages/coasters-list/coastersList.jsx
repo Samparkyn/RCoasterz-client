@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Table } from '../../components/table'
 
 export class CoastersList extends Component {
 
@@ -42,25 +43,20 @@ export class CoastersList extends Component {
           <td>{dataPoint.stats.inversions}</td>
       </tr>
     })
-    console.log('coasternames', coasterInfo)
+
+    const headers = <tr>
+    <th>Name</th>
+    <th>Park</th>
+    <th>Location</th>
+    <th>Inversions</th>
+    </tr>
+
 
     return (
       <div>
         <h1>Coasters</h1>
         <p>What Coaster do you want to know more about?</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Park</th> 
-              <th>Country</th>
-              <th>Inversions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {coasterInfo}
-          </tbody>
-        </table>
+        <Table header={headers} rows={coasterInfo} />
       </div>  
     )
   }
