@@ -1,8 +1,8 @@
 @import url('./styles/fonts.css'); 
 @import url('./pages/explore/explore.css');
-@import url('./pages/coasters/coasters.css');
+@import url('./pages/coasters-list/coastersList.css');
 @import url('./pages/home/home.css');
-@import url('./pages/parks/parks.css');
+@import url('./pages/parks-list/parksList.css');
 @import url('./components/explore-toggle/explore-toggle.css');
 @import url('./components/search/search.css');
 @import url('./components/footer/footer.css');

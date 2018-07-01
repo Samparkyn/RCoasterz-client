@@ -1,13 +1,4 @@
 import React, { Component } from 'react'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {
-  Table,
-  TableBody,
-  TableHeader,
-  TableHeaderColumn,
-  TableRow,
-  TableRowColumn,
-} from 'material-ui/Table';
 
 export class CoastersList extends Component {
 
@@ -44,12 +35,12 @@ export class CoastersList extends Component {
 
     console.log('coaster data ', data)
     const coasterInfo = data.map(dataPoint => {
-      return <TableRow>
-          <TableRowColumn>{dataPoint.name}</TableRowColumn>
-          <TableRowColumn>{dataPoint.park.name}</TableRowColumn>
-          <TableRowColumn>{dataPoint.park.country}</TableRowColumn>
-          <TableRowColumn>{dataPoint.stats.inversions}</TableRowColumn>
-      </TableRow>
+      return <tr key={dataPoint.id} className="table__row">
+          <td>{dataPoint.name}</td>
+          <td>{dataPoint.park.name}</td>
+          <td>{dataPoint.park.country}</td>
+          <td>{dataPoint.stats.inversions}</td>
+      </tr>
     })
     console.log('coasternames', coasterInfo)
 
@@ -57,24 +48,20 @@ export class CoastersList extends Component {
       <div>
         <h1>Coasters</h1>
         <p>What Coaster do you want to know more about?</p>
-        <div>
-          <MuiThemeProvider>
-            <Table>
-              <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
-                <TableRow>
-                  <TableHeaderColumn>Name</TableHeaderColumn>
-                  <TableHeaderColumn>Park</TableHeaderColumn>
-                  <TableHeaderColumn>Country</TableHeaderColumn>
-                  <TableHeaderColumn>Inversions</TableHeaderColumn>
-                </TableRow>
-              </TableHeader>
-              <TableBody displayRowCheckbox={false}>
-                {coasterInfo}
-              </TableBody>
-            </Table>
-          </MuiThemeProvider>
-        </div>
-      </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Park</th> 
+              <th>Country</th>
+              <th>Inversions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {coasterInfo}
+          </tbody>
+        </table>
+      </div>  
     )
   }
 }
